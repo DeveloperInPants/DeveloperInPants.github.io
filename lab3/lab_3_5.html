@@ -4,18 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Стили</title>
-    <link rel="stylesheet" href="reset.css">    
+    <link rel="stylesheet" href="style.css"> <!-- Подключение файла стилей -->
+    
+    <!-- Подключение шрифтов Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Подключение MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="icon" href="favicon.ico">
- <style>
+    
+    <!-- Подключение фавиконки -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+       /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+        /* Остальные стили */
         body {
-        
-            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiBpZD0iQmdlblB0dHJuU3ZnUm9vdFByZXZpZXciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJCZ2VuUHR0cm5MYXllcjEiPjxnIGlkPSJQYXR0ZXJuUm9vdENvbnRlbnQxIj48ZyBpZD0iQmdlblB0dHJuTGF5ZXIxYmFja2dyb3VuZCI+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMSIgaWQ9IkJnZW5QdHRybkJhY2tncm91bmQxIiBjbGFzcz0iY29sb3JfMSBmaWxsX2NvbG9yXzEiIGZpbGw9IiNiMGIwYjAiPjwvcmVjdD48L2c+PC9nPjwvcGF0dGVybj48cGF0dGVybiB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iQmdlblB0dHJuTGF5ZXIyIiBwYXR0ZXJuVHJhbnNmb3JtPSJtYXRyaXgoMC4xLDAsMCwwLjEsMCwwKSI+PGcgaWQ9IlBhdHRlcm5Sb290Q29udGVudDIiPjxnIGlkPSJCZ2VuUHR0cm5MYXllcjJFbGVtZW50MiI+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDIiIHg9Ii00Mi42NDEwMTc5MTM4MTgzNiIgeT0iLTM4LjI5NDIzMTQxNDc5NDkyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLCAtMC41KSBzY2FsZSgxKSB0cmFuc2xhdGUoLTEsIDAuNSkgcm90YXRlKDkwLCAxLCAtMC41KSI+PC91c2U+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDIiIHg9Ii00My42NDEwMTc5MTM4MTgzNiIgeT0iLTM4LjI5NDIzMTQxNDc5NDkyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAtMC41KSBzY2FsZSgxKSB0cmFuc2xhdGUoMCwgMC41KSByb3RhdGUoOTAsIDAsIC0wLjUpIj48L3VzZT48dXNlIHhsaW5rOmhyZWY9IiNCZ2VuUHR0cm5FbGVtZW50MiIgeD0iLTQzLjE0MTAxNzkxMzgxODM2IiB5PSItMzcuMjk0MjMxNDE0Nzk0OTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwgMC41KSBzY2FsZSgxKSB0cmFuc2xhdGUoLTAuNSwgLTAuNSkgcm90YXRlKDkwLCAwLjUsIDAuNSkiPjwvdXNlPjx1c2UgeGxpbms6aHJlZj0iI0JnZW5QdHRybkVsZW1lbnQyIiB4PSItNDQuMTQxMDE3OTEzODE4MzYiIHk9Ii0zNy4yOTQyMzE0MTQ3OTQ5MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNSwgMC41KSBzY2FsZSgxKSB0cmFuc2xhdGUoMC41LCAtMC41KSByb3RhdGUoOTAsIC0wLjUsIDAuNSkiPjwvdXNlPjx1c2UgeGxpbms6aHJlZj0iI0JnZW5QdHRybkVsZW1lbnQyIiB4PSItNDMuMTQxMDE3OTEzODE4MzYiIHk9Ii0zOS4yOTQyMzE0MTQ3OTQ5MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LCAtMS41KSBzY2FsZSgxKSB0cmFuc2xhdGUoLTAuNSwgMS41KSByb3RhdGUoOTAsIDAuNSwgLTEuNSkiPjwvdXNlPjx1c2UgeGxpbms6aHJlZj0iI0JnZW5QdHRybkVsZW1lbnQyIiB4PSItNDIuMTQxMDE3OTEzODE4MzYiIHk9Ii0zNy4yOTQyMzE0MTQ3OTQ5MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS41LCAwLjUpIHNjYWxlKDEpIHRyYW5zbGF0ZSgtMS41LCAtMC41KSByb3RhdGUoOTAsIDEuNSwgMC41KSI+PC91c2U+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDIiIHg9Ii00Mi42NDEwMTc5MTM4MTgzNiIgeT0iLTM2LjI5NDIzMTQxNDc5NDkyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLCAxLjUpIHNjYWxlKDEpIHRyYW5zbGF0ZSgtMSwgLTEuNSkgcm90YXRlKDkwLCAxLCAxLjUpIj48L3VzZT48dXNlIHhsaW5rOmhyZWY9IiNCZ2VuUHR0cm5FbGVtZW50MiIgeD0iLTQzLjY0MTAxNzkxMzgxODM2IiB5PSItMzYuMjk0MjMxNDE0Nzk0OTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDEuNSkgc2NhbGUoMSkgdHJhbnNsYXRlKDAsIC0xLjUpIHJvdGF0ZSg5MCwgMCwgMS41KSI+PC91c2U+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDIiIHg9Ii00My4xNDEwMTc5MTM4MTgzNiIgeT0iLTM1LjI5NDIzMTQxNDc5NDkyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsIDIuNSkgc2NhbGUoMSkgdHJhbnNsYXRlKC0wLjUsIC0yLjUpIHJvdGF0ZSg5MCwgMC41LCAyLjUpIj48L3VzZT48dXNlIHhsaW5rOmhyZWY9IiNCZ2VuUHR0cm5FbGVtZW50MiIgeD0iLTQzLjE0MTAxNzkxMzgxODM2IiB5PSItMzUuMjk0MjMxNDE0Nzk0OTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwgMi41KSBzY2FsZSgxKSB0cmFuc2xhdGUoLTAuNSwgLTIuNSkgcm90YXRlKDkwLCAwLjUsIDIuNSkiPjwvdXNlPjwvZz48L2c+PC9wYXR0ZXJuPjxzeW1ib2wgaWQ9IkJnZW5QdHRybkVsZW1lbnQyIj48ZyBjbGFzcz0iY29sb3JfMyBmaWxsX2NvbG9yXzMiIGZpbGw9IiM3NzhmOTEiPjxwYXRoIGQ9Ik0zMy42NDEsMzUuOTk5OTU4MDM4MzMwMDhsNCwwTDM3LjY0MSwxMS45OTk5NTgwMzgzMzAwNzhsLTQsMGwwLDI0Wm04LDhsNCwwTDQ1LjY0MSwzLjk5OTk1ODAzODMzMDA3OGwtNCwwbDAsNDBaTTI1LjY0MSwyNy45OTk5NTgwMzgzMzAwNzhsNCwwbDAsLThMMjUuNjQxLDE5Ljk5OTk1ODAzODMzMDA3OGwwLDhabTI0LDhsNCwwTDUzLjY0MSwxMS45OTk5NTgwMzgzMzAwNzhsLTQsMGwwLDI0Wm04LC0xNmwwLDhsNCwwbDAsLThsLTQsMFoiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSI+PC9wYXRoPjxwYXRoIGQ9Ik01NS41NjksMzkuMzM5NzAyNjA2MjAxMTdsLTIsMy40NjRMNzQuMzU0LDU0LjgwMzgwNjMwNDkzMTY0bDIsLTMuNDY0bC0yMC43ODUsLTEyWm0tMTAuOTI4LDIuOTI4bC0yLDMuNDY0TDc3LjI4Miw2NS43MzIwMDk4ODc2OTUzMWwyLC0zLjQ2NGwtMzQuNjQxLC0yMFpNNjYuNDk3LDM2LjQxMTQ5OTAyMzQzNzVsLTIsMy40NjRsNi45MjgsNEw3My40MjYsNDAuNDExNDk5MDIzNDM3NWwtNi45MjksLTRabS0xOC45MjgsMTYuNzg1bC0yLDMuNDY0TDY2LjM1NCw2OC42NjAyMTcyODUxNTYyNWwyLC0zLjQ2NGwtMjAuNzg1LC0xMlptOS44NTYsMTQuOTI4bC02LjkyOCwtNGwtMiwzLjQ2NGw2LjkyOCw0bDIsLTMuNDY0WiIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDApIj48L3BhdGg+PHBhdGggZD0iTTQxLjcxMyw1Ni42NjAyMTM0NzA0NTg5ODRsLTIsLTMuNDY0TDE4LjkyOCw2NS4xOTYxMDU5NTcwMzEyNWwyLDMuNDY0bDIwLjc4NSwtMTJabTIuOTI4LC0xMC45MjhsLTIsLTMuNDY0TDgsNjIuMjY3OTA2MTg4OTY0ODQ0bDIsMy40NjRsMzQuNjQxLC0yMFpNMzguNzg1LDY3LjU4ODQxNzA1MzIyMjY2bC0yLC0zLjQ2NGwtNi45MjgsNEwzMS44NTYsNzEuNTg4NDE3MDUzMjIyNjZsNi45MjksLTRabS01LjA3MiwtMjQuNzg1bC0yLC0zLjQ2NEwxMC45MjgsNTEuMzM5NzAyNjA2MjAxMTdsMiwzLjQ2NGwyMC43ODUsLTEyWm0tMTcuODU2LDEuMDcybDYuOTI4LC00bC0yLC0zLjQ2NGwtNi45MjgsNGwyLDMuNDY0WiIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDApIj48L3BhdGg+PC9nPjwvc3ltYm9sPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpZD0iQmdlblB0dHJuUmN0TGF5ZXIxIiBmaWxsPSJ1cmwoJnF1b3Q7I0JnZW5QdHRybkxheWVyMSZxdW90OykiPjwvcmVjdD48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpZD0iQmdlblB0dHJuUmN0TGF5ZXIyIiBmaWxsPSJ1cmwoJnF1b3Q7I0JnZW5QdHRybkxheWVyMiZxdW90OykiPjwvcmVjdD48L3N2Zz4=");
+            background-image: url('your-background-image-url.jpg'); /* Укажите URL вашего бесшовного фона */
             background-repeat: repeat;
-            font-size: 1.5rem;
-            line-height: 2rem;
+            font-family: 'Roboto', sans-serif; /* Установка шрифта Roboto для всего документа */
         }
 
         .wrapper {
@@ -25,18 +80,20 @@
             padding-left: 10px;
             padding-right: 10px;
         }
-         article {
-            border: 2px solid #ccc; 
-            border-radius: 10px; 
-            margin: 20px 0;
-            padding: 15px;
-            background-color: rgba(255, 255, 255, 0.9); 
+
+        article {
+            border: 2px solid #ccc; /* Цвет рамки */
+            border-radius: 10px; /* Скругление углов */
+            margin: 20px 0; /* Внешние отступы */
+            padding: 15px; /* Внутренние отступы */
+            background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для статьи */
         }
+
         h1, h2 {
             text-align: right;
             font-weight: bold;
-            color: red;
-            font-family: 'Roboto', sans-serif;
+            color: #d32f2f; /* Гармоничный красный цвет */
+            font-family: 'Roboto', sans-serif; /* Установка шрифта Roboto для заголовков */
         }
 
         p {
@@ -46,8 +103,9 @@
         em {
             color: green;
         }
+
         strong {
-            font-family: 'Caveat', cursive; 
+            font-family: 'Caveat', cursive; /* Установка шрифта Caveat для элемента strong */
         }
     </style>
 </head>
