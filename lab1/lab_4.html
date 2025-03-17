@@ -49,7 +49,7 @@
 		Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 		<figure>
-            		<img src="/mushroom.jpg.jpg" alt="Грибочек">
+            		<img src="/mushroom.jpg" alt="Грибочек">
             		<figcaption>Гриб в лесу <code>srcset</code> и <code>sizes</code>.
 			</figcaption>
         	</figure>
@@ -64,9 +64,9 @@
 		</p>		
 		<figure>
             		<picture>
-                		<source media="(min-width: 350px)" srcset="/mushroom_portait.jpg">
-                		<source media="(min-width: 1200px)" srcset="/mushroom_retina.jpg">
-                		<source media="(max-width: 600px)" srcset="images/mushroom_landscape.jpg">
+                		<source media="(min-width: 300px)" srcset="/mushroom_portait.jpg">
+                		<source media="(min-width: 900px)" srcset="/mushroom_retina.jpg">
+                		<source media="(max-width: 500px)" srcset="images/mushroom_landscape.jpg">
                 		<img src="/mushroom.jpg" alt="Запасное изображение">
             		</picture>
             		<figcaption>Грибы <code>picture</code> с разными источниками изображений.</figcaption>
