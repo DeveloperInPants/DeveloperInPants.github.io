@@ -47,7 +47,11 @@
 		Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. 
 		Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
-
+		<figure>
+            		<img src="/mushroom.jpg.jpg" alt="Грибочек" srcset="images/image4-small.jpg 300w, images/image4-medium.jpg 600w, images/image4-large.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px">
+            		<figcaption>Гриб в лесу<code>srcset</code> и <code>sizes</code>.
+			</figcaption>
+        	</figure>
 		<h2>Элемент picture</h2>
 		<p>
 		HTML-элемент <code>picture</code> служит контейнером для одного или более элементов 
@@ -56,6 +60,16 @@
 		и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов <code>source</code> 
 		найдено не будет, то будет выбран файл, указанный  атрибутом  <code>src</code> элемента <code>img</code>. 
 		Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>. 
+<!-- 		<figure>
+            		<picture>
+                		<source media="(min-width: 1200px)" srcset="/mushroom.jpg">
+                		<source media="(min-width: 800px)" srcset="images/image-medium.jpg">
+                		<source media="(max-width: 799px)" srcset="images/image-small.jpg">
+                		<img src="images/image-fallback.jpg" alt="Запасное изображение, если браузер не поддерживает элемент picture">
+            		</picture>
+            		<figcaption>Подпись к изображению: это пример использования элемента <code>picture</code> с разными источниками изображений.</figcaption>
+       		</figure> -->
+
 		</p>
 	</section>
 </body>
